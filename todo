@@ -1,0 +1,3 @@
+- g++ make single command to generate a single binary --done
+- switch to make to build the proj
+- switch to cmake to build the proj
