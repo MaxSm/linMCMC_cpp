@@ -1,2 +1,4 @@
 .vscode
 ./lin_ode_mcmc
+build
+tails

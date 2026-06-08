@@ -10,30 +10,37 @@ I tried to construct functions in a way that it would be easy to follow the step
 
 
 The build has only been tested for Ubuntu 24.04:
-+ [make](https://www.gnu.org/software/make/) `4.3` and [GCC](https://gcc.gnu.org/) `11.5` 
++ [CMake](https://cmake.org/download/) `>= 3.20.2`
++ [make](https://www.gnu.org/software/make/) `4.3` and [GCC](https://gcc.gnu.org/) `11.5.0` 
 
 In order to compile:
-```
-make solver
+
+From the root directory
+```bash
+# Create the build directory and change into it
+mkdir -p build && cd build
+
+# Configure CMake from the command line passing configure-time options. 
+cmake ..
+
+#Build target
+make 
 ```
 In order to execute:
-```
+```bash
 ./lin_ode_mcmc
-```
-Clean:
-```
-make clean
 ```
 
 If you require a debug build, substitute for 
-```
-make solver_db
-./lin_ode_mcmc_db
-```
+``` bash
+# Configure CMake from the command line passing configure-time options. 
+cmake .. -DCMAKE_BUILD_TYPE=Debug
 
-Clean:
-```
-make clean_db
+# Build target
+make 
+
+# Execute
+gdb ./lin_ode_mcmc_db
 ```
 
 ## Collaboration
