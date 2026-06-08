@@ -1,28 +1,39 @@
 ## Markov Chain Monte Carlo solver for linear differential equations
 
-Hi everyone! This is my c++ implementation of an MCMC algorithm for solving large systems of differnetioal equations. Theory behind it is described in the paper that is uploaded on the repo. 
+Hi everyone! This is my C++ implementation of an MCMC algorithm for solving large systems of differnetioal equations. Theory behind it is described in the paper that is uploaded on the repo. 
 
-This version of the solver is by no means universal, and only deals with the system of equations described in part 4. of the paper. 
+This version of the solver is by no means universal, and only deals with the system of equations described in part 4 of the paper. 
 
 I tried to construct functions in a way that it would be easy to follow the steps described in the main body of the work; comments are currently lacking, but hopefully will be added later.
 
 ## Building
 
-The build has only been tested for Ubuntu 24.04 and under g++ 11.5
+
+The build has only been tested for Ubuntu 24.04:
++ [make](https://www.gnu.org/software/make/) `4.3` and [GCC](https://gcc.gnu.org/) `11.5` 
 
 In order to compile:
 ```
-bash ./compile.sh
+make solver
 ```
 In order to execute:
 ```
 ./lin_ode_mcmc
 ```
+Clean:
+```
+make clean
+```
 
 If you require a debug build, substitute for 
 ```
-bash ./compile_db.sh
+make solver_db
 ./lin_ode_mcmc_db
+```
+
+Clean:
+```
+make clean_db
 ```
 
 ## Collaboration
