@@ -8,7 +8,7 @@ I tried to construct functions in a way that it would be easy to follow the step
 
 ## Building
 
-The build has only been tested for Ubuntu 24.04 and under g++ `11.5`
+The build has only been tested for Ubuntu 24.04 and under g++ 11.5
 
 In order to compile:
 ```
@@ -26,13 +26,14 @@ bash ./compile_db.sh
 ```
 
 ## Collaboration
-Feel free to fork the repo and play around with it: e.g. ypu can build different equation systems, etc.
+Feel free to fork the repo and play around with it: e.g. you can build different equation systems, etc.
 
 Don't hesitate to contact me if you have any questions: smmxgr@gmail.com
 
 ## Credits
 
 Sergey Ermakov
+
 Tamara Surovikina
 
 ## License
